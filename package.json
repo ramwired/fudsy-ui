@@ -1,0 +1,20 @@
+{
+  "name": "fudsy-ui",
+  "version": "1.0.0",
+  "description": "Learning react from zero!!",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sreeram",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browerslist":[
+    "last 2 versions"
+  ]
+}
