@@ -1,33 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
 
-/* const root = document.getElementById("root");
-const heading = document.createElement("h1");
-heading.innerHTML = "Hello world from JS";
-root.append(heading); */
-
-// const heading = React.createElement("h1", {id:"heading"}, "Hello world from React!!!");
-
-/*<div id="parent">
-    <div id="Div1">
-       <h1 class="heading1"></h1>
-       <h2 class="heading2"></h2>
-    </div>
-    <div id="Div2">
-       <h1 class="heading1"></h1>
-       <h2 class="heading2"></h2>
-    </div>
-</div> */
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "Div1" }, [
-    React.createElement("h1", { className: "heading1" }, "Title 1"),
-    React.createElement("h2", { className: "heading2" }, "Description 1"),
-  ]),
-  React.createElement("div", { id: "Div2" }, [
-    React.createElement("h1", { className: "heading1" }, "Title 2"),
-    React.createElement("h2", { className: "heading2" }, "Description 2"),
-  ]),
-]);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const name = <span>[ramwired........]</span>;
+//react element inside a react element
+const heading = (
+  <div>
+    <h1 className="heading">Hello world from JSX 🚀</h1>
+    {name}
+  </div>
+);
+//Functional component
+const ReactMode = () => (
+  <h2>React Mode: <span>ON✨</span></h2>
+);
+//react element & component inside a react component
+const HeadingComponent = () => (
+  <div>
+    {heading}
+    <h2>Crafting UI magic, one component at a time🔥</h2>
+    <ReactMode />
+  </div>
+);
+root.render(<HeadingComponent/>);

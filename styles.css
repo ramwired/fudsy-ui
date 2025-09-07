@@ -1,6 +1,7 @@
-.heading1{
-    color: red;
+.heading{
+    color:tomato;
 }
-.heading2{
+span{
     color: blue;
+    font-family: 'Courier New';
 }
